@@ -5,6 +5,7 @@ class Student{
     public:
     string name;
     int RollNum;
+    int grade;
     
     void input()
     {
@@ -12,11 +13,14 @@ class Student{
         getline(cin,name);
         cout<<"Enter roll number: ";
         cin>>RollNum;
+        cout<<"Enter grade of the student : ";
+        cin>>grade;
     }
     void display()
     {
         cout<<"Name of student: "<<name<<endl;
         cout<<"Roll number: "<<RollNum<<endl;
+        cout<<"Grade of the student: "<<grade<<endl;
     }
     void displayGrade(int marks)
     {
@@ -40,4 +44,3 @@ int main()
     s.displayGrade(marks);
     return 0;
 }
-
